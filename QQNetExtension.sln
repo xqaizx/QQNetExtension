@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XQ.NetExtension", "QQNetExtension\XQ.NetExtension.csproj", "{1CDDBCB5-A961-4E87-98BD-EB176D7259EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQNetExtension", "QQNetExtension\QQNetExtension.csproj", "{1CDDBCB5-A961-4E87-98BD-EB176D7259EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XQ.DBHelper", "DBHelper\XQ.DBHelper.csproj", "{17D57A71-5CDD-438B-94D0-5C59A89F6282}"
 EndProject
