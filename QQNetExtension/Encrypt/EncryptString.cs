@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
+using XQ.NetExtension.NetExtension;
 
 namespace XQ.NetExtension.Encrypt
 {
@@ -37,7 +38,7 @@ namespace XQ.NetExtension.Encrypt
             try
             {
                 char[] chArray = str.ToCharArray();
-                string[] strArray =XString.ArrayListstr(str, t);
+                string[] strArray = str.ArrayListstr(t);  
                 for (int i = 0; i < strArray.Length; i++)
                 {
                     byte[] bytes = Convert.FromBase64String(strArray[i].ToString().Substring(0, 4));

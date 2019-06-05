@@ -8,7 +8,7 @@ namespace XQ.NetExtension.NetExtension
     /// <summary>
     /// 字符串扩展类
     /// </summary>
-    public static class StringNetExtension
+    public static class StringExtension
     {
         /// <summary>
         /// 去除字符串最后一个字符

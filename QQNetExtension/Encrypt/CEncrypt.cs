@@ -56,15 +56,19 @@ namespace XQ.NetExtension.Encrypt
                 byKey = System.Text.Encoding.UTF8.GetBytes(encryptKey.Substring(0, 8));
                 DESCryptoServiceProvider des = new DESCryptoServiceProvider();
                 byte[] inputByteArray = Encoding.UTF8.GetBytes(inputString);
-                MemoryStream ms = new MemoryStream();
-                CryptoStream cs = new CryptoStream(ms, des.CreateEncryptor(byKey, IV), CryptoStreamMode.Write);
-                cs.Write(inputByteArray, 0, inputByteArray.Length);
-                cs.FlushFinalBlock();
-                return Convert.ToBase64String(ms.ToArray());
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    using (CryptoStream cs = new CryptoStream(ms, des.CreateEncryptor(byKey, IV), CryptoStreamMode.Write))
+                    {
+                        cs.Write(inputByteArray, 0, inputByteArray.Length);
+                        cs.FlushFinalBlock();
+                        return Convert.ToBase64String(ms.ToArray());
+                    } 
+                }
+
             }
             catch (System.Exception error)
-            {
-                //return error.Message;
+            { 
                 return null;
             }
         }
