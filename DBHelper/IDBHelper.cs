@@ -5,7 +5,7 @@ using System.Text;
 using System.Collections;
 using System.Data.Common;
 
-namespace Common.DBHelper
+namespace XQ.DBHelper
 {
     /// <summary>
     /// 数据访问抽象类

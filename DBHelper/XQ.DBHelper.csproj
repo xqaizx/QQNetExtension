@@ -8,8 +8,8 @@
     <ProjectGuid>{17D57A71-5CDD-438B-94D0-5C59A89F6282}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DBHelper</RootNamespace>
-    <AssemblyName>DBHelper</AssemblyName>
+    <RootNamespace>XQ.DBHelper</RootNamespace>
+    <AssemblyName>XQ.DBHelper</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

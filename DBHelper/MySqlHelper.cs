@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Common.DBHelper
+namespace XQ.DBHelper
 {
     public class MySqlHelper:ADBHelper,IDBHelper
     {

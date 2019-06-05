@@ -7,7 +7,7 @@ using System.Configuration;
 using System.Data.Common;
 using System.Collections;
 
-namespace Common.DBHelper
+namespace XQ.DBHelper
 {
     public class SqlServerHelper : ADBHelper, IDBHelper
     {

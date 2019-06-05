@@ -5,13 +5,12 @@ using System.Collections.Specialized;
 using System.Data;
 using System.Data.OleDb;
 using System.Configuration;
-using System.Collections.Generic;
-using Common.DBHelper;
+using System.Collections.Generic; 
 using System.Data.Common;
 
 
 
-namespace Common.DBHelper
+namespace XQ.DBHelper
 {
 
 

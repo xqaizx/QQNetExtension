@@ -6,7 +6,7 @@ using System.Collections;
 
 
 
-namespace Common.DBHelper
+namespace XQ.DBHelper
 {
     /// <summary>
     /// A helper class used to execute queries against an Oracle database

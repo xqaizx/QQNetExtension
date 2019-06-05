@@ -4,7 +4,7 @@ using System.Text;
 using System.Data.Common;
 using System.Data;
 
-namespace Common.DBHelper
+namespace XQ.DBHelper
 {
     /// <summary>
     /// 数据库访问抽象类
