@@ -11,6 +11,30 @@ namespace XQ.NetExtension.NetExtension
     public static class StringExtension
     {
         /// <summary>
+        /// 验证String是否为空
+        /// </summary>
+        /// <param name="this"></param>
+        /// <returns></returns>
+        public static bool IsNullOrWhiteSpace(this string @this)
+        {
+            return string.IsNullOrWhiteSpace(@this);
+        }
+
+
+        /// <summary>
+        /// 是否Int类型
+        /// </summary>
+        /// <param name="this"></param>
+        /// <returns></returns>
+        public static bool IsInt(this string @this)
+        {
+            if (@this.IsNullOrWhiteSpace()) return false;
+            int num = 0;
+            return int.TryParse(@this, out num);
+        }
+
+
+        /// <summary>
         /// 去除字符串最后一个字符
         /// </summary>
         /// <param name="input">字符串</param>
@@ -25,15 +49,7 @@ namespace XQ.NetExtension.NetExtension
             return @this;
         }
 
-        /// <summary>
-        /// 验证String是否为空
-        /// </summary>
-        /// <param name="this"></param>
-        /// <returns></returns>
-        public static bool IsNullOrWhiteSpace(this string @this)
-        {
-            return string.IsNullOrWhiteSpace(@this);
-        }
+       
 
 
         /// <summary>

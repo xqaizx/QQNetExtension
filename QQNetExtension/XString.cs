@@ -8,19 +8,7 @@ namespace XQ.NetExtension
     /// 字符串操作
     /// </summary>
     public class XString
-    {
-        /// <summary>
-        /// 获取当前时间字符串
-        /// </summary>
-        /// <returns></returns>
-        public static string GetNowTimeString()
-        {
-            return (DateTime.Now.ToString("yyyyMMddHHmmssfff") + XRandom.GetRandomNum(3));
-        }
-
-
-        
-
+    {   
 
         /// <summary>
         /// 截取字符串
